@@ -13,34 +13,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
-      <nav class="navigation-bar">
-        <a href="index.html">
-          <img src="img/logo.png" alt="Logo Termo-Went" class="company-logo" />
-        </a>
+    <header class="header">
+      <a href="#">
+        <img src="img/logo.png" alt="Logo Termo-Went" class="company-logo" />
+      </a>
 
-        <ul class="nav-link-box">
+      <nav class="navigation-bar">
+        <ul class="main-nav-list">
           <li>
-            <a href="index.html" class="nav-link">Start</a>
+            <a href="index.html" class="main-nav-link">Start</a>
           </li>
 
           <li class="dropdown">
-            <a href="o-firmie.html" class="nav-link">O firmie</a>
+            <a href="o-firmie.html" class="main-nav-link">O firmie</a>
             <ul class="nav-dropdown dropdown-content">
               <li>
-                <a href="referencje-i-certyfikaty.html" class="nav-link"
+                <a href="referencje-i-certyfikaty.html" class="main-nav-link"
                   >Referencje i certyfikaty</a
                 >
               </li>
-              <li><a href="oferty-pracy" class="nav-link">Oferty pracy</a></li>
+              <li>
+                <a href="oferty-pracy" class="main-nav-link">Oferty pracy</a>
+              </li>
 
               <li>
-                <a href="wspieramy-sportowcow.html" class="nav-link"
+                <a href="wspieramy-sportowcow.html" class="main-nav-link"
                   >Wspieramy sportowców</a
                 >
               </li>
@@ -48,30 +50,36 @@
           </li>
 
           <li class="dropdown">
-            <a href="oferta.html" class="nav-link">Oferta</a>
+            <a href="oferta.html" class="main-nav-link">Oferta</a>
             <ul class="nav-dropdown dropdown-content">
               <li>
-                <a href="klimatyzacja.html" class="nav-link">Klimatyzacja</a>
-              </li>
-              <li><a href="wentylacja.html" class="nav-link">Wentylacja</a></li>
-              <li>
-                <a href="rekuperacja.html" class="nav-link">Rekuperacja</a>
+                <a href="klimatyzacja.html" class="main-nav-link"
+                  >Klimatyzacja</a
+                >
               </li>
               <li>
-                <a href="pompy-ciepla.html" class="nav-link">Pompy ciepła</a>
+                <a href="wentylacja.html" class="main-nav-link">Wentylacja</a>
               </li>
               <li>
-                <a href="uslugi-hydrauliczne" class="nav-link"
+                <a href="rekuperacja.html" class="main-nav-link">Rekuperacja</a>
+              </li>
+              <li>
+                <a href="pompy-ciepla.html" class="main-nav-link"
+                  >Pompy ciepła</a
+                >
+              </li>
+              <li>
+                <a href="uslugi-hydrauliczne" class="main-nav-link"
                   >Usługi hydrauliczne</a
                 >
               </li>
             </ul>
           </li>
           <li>
-            <a href="realizacje.html" class="nav-link">Realizacje</a>
+            <a href="realizacje.html" class="main-nav-link">Realizacje</a>
           </li>
           <li>
-            <a href="kontakt.html" class="nav-link">Kontakt</a>
+            <a href="kontakt.html" class="main-nav-link nav-btn">Kontakt</a>
           </li>
         </ul>
       </nav>
@@ -92,7 +100,7 @@
             sterowania.
           </p>
 
-          <a href="oferta.html" class="hero-button button">Zobacz ofertę</a>
+          <a href="oferta.html" class="btn btn-big">Zobacz ofertę</a>
         </div>
         <div class="hero-img-box">
           <img
@@ -103,6 +111,56 @@
         </div>
       </div>
     </section>
+
+    <section class="about-section">
+      <div class="container">
+        <ul class="about-list">
+          <li>
+            <ion-icon class="icon" name="time"></ion-icon>
+            <h3 class="heading-tertiary">16 Lat doświadczenia</h3>
+          </li>
+
+          <li>
+            <ion-icon class="icon" name="hammer"></ion-icon>
+            <h3 class="heading-tertiary">5000+ Wykonanych zleceń</h3>
+          </li>
+
+          <li>
+            <ion-icon class="icon" name="people"></ion-icon>
+            <h3 class="heading-tertiary">2000+ Zadowolonych klientów</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="partners-section">
+      <div class="container">
+        <h2 class="partners-heading">Współpracujemy z najlepszymi</h2>
+        <div class="logos">
+          <img src="img/loga_firm/caldo.png" alt="Logo Caldo-Izolacja" />
+          <img src="img/loga_firm/dedietrich.png" alt="Logo De Dietrich" />
+          <img src="img/loga_firm/fujitsu.png" alt="Logo Fujitsu" />
+          <img src="img/loga_firm/harmann.png" alt="Logo Harmann" />
+          <img src="img/loga_firm/kampmann.png" alt="Logo Kampmann" />
+          <img src="img/loga_firm/kermi.png" alt="Logo Kermi" />
+          <img src="img/loga_firm/klimor.png" alt="Logo Klimor" />
+          <img src="img/loga_firm/centrum-klima.png" alt="Logo Centrum Klima" />
+          <img src="img/loga_firm/flowair.png" alt="Logo Flowair" />
+          <img src="img/loga_firm/mefa.png" alt="Logo Mefa" />
+          <img src="img/loga_firm/daikin.png" alt="Logo Daikin" />
+          <img src="img/loga_firm/klima-therm.png" alt="Logo Klima Therm" />
+          <img src="img/loga_firm/vts.png" alt="Logo VTS" />
+          <img src="img/loga_firm/lindab.png" alt="Logo Lindab" />
+          <img src="img/loga_firm/radson.png" alt="Logo Radson" />
+          <img src="img/loga_firm/sanha.png" alt="Logo Sanha" />
+          <img src="img/loga_firm/smay.png" alt="Logo Smay" />
+          <img src="img/loga_firm/vaillant.png" alt="Logo vaillant" />
+          <img src="img/loga_firm/viessmann.png" alt="Logo Viessmann" />
+          <img src="img/loga_firm/srubtar.png" alt="Logo Śrubtar" />
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <ul class="about-elements">
         <li>
@@ -119,6 +177,19 @@
           <p class="company-name">TERMO-WENT Sp. z o.o.</p>
         </li>
       </ul>
+      <p class="copy">
+        2022 &copy; Termo-Went Spółka Cywilna, wykonanie strony Szymon
+        Kwiatkowski
+      </p>
     </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
