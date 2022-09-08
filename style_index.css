@@ -9,15 +9,9 @@
 
 body {
   /* width: 90%; */
-  margin: 0 auto;
   font-family: "Inter", sans-serif;
   color: #343a40;
 }
-
-/* .main-header {
-  width: 90%;
-  margin: 0 auto;
-} */
 
 /* = Headers = */
 
@@ -72,6 +66,33 @@ body {
 
 .hero-image {
   height: 30rem;
+}
+
+/* = Footer = */
+
+.footer {
+  padding: 9.6rem 2.4rem;
+}
+
+.about-elements {
+  list-style: none;
+  display: flex;
+  gap: 7.2rem;
+  justify-content: center;
+}
+
+.about-elements li {
+  text-align: center;
+}
+
+.about-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  fill: #fa5252;
+}
+
+.company-name {
+  font-weight: 500;
 }
 
 /* = Link Styling = */
