@@ -1,0 +1,130 @@
+/* Main color: #fa5252 */
+/* Gray color: #343a40 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* width: 90%; */
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+}
+
+/* .main-header {
+  width: 90%;
+  margin: 0 auto;
+} */
+
+/* = Headers = */
+
+.primary-heading {
+  font-size: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+/* = Site elements = */
+
+.navigation-bar {
+  padding: 0.6rem 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-logo {
+  height: 60px;
+}
+
+.navigation-bar .nav-link-box {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.section-hero {
+  padding: 42px 0;
+}
+
+.hero {
+  padding: 0 4.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.2rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+.hero-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  height: 30rem;
+}
+
+/* = Link Styling = */
+
+a:link {
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #343a40;
+}
+
+a:visited {
+  color: #343a40;
+}
+
+a:hover {
+  color: #fa5252;
+}
+
+.hero-button:link {
+  font-size: 1.2rem;
+  padding: 1.2rem 2.4rem;
+  background-color: #fa5252;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+/* = Dropdown Menu = */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  min-width: 224px;
+  list-style: none;
+  background-color: #fff;
+  padding: 16px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+ul.dropdown-content li {
+  margin-bottom: 16px;
+}
+
+ul.dropdown-content li:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
