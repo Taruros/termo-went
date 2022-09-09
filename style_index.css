@@ -1,4 +1,5 @@
 /* Main color: #fa5252 #e03131*/
+/* Secondary colod: #4263eb #364fc7 */
 /* Gray color: #343a40 #868e96 */
 
 * {
@@ -26,6 +27,22 @@ body {
   margin-bottom: 3.2rem;
 }
 
+.heading-tertiary {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary.about-heading {
+  margin-bottom: 0;
+}
+
 .partners-heading {
   color: #868e96;
   font-size: 1.4rem;
@@ -36,13 +53,7 @@ body {
   margin-bottom: 2.4rem;
 }
 
-.heading-tertiary {
-  font-size: 2.4rem;
-  line-height: 1.2;
-  /* margin-bottom: 3.2rem; */
-}
-
-/* = Site elements = */
+/* === Site elements === */
 
 .container {
   max-width: 120rem;
@@ -50,15 +61,7 @@ body {
   margin: 0 auto;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  height: 8rem;
-  padding: 0 4.8rem;
-  position: relative;
-}
+/* = Navbar = */
 
 .navigation-bar {
   display: flex;
@@ -76,6 +79,18 @@ body {
   align-items: center;
   gap: 4.8rem;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 8rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+/* = Hero section = */
 
 .section-hero {
   padding: 4.8rem 0 7.2rem 0;
@@ -107,6 +122,8 @@ body {
   width: 100%;
 }
 
+/* = About section = */
+
 .about-section {
   padding: 4.8rem 0 3.2rem;
 }
@@ -133,6 +150,35 @@ body {
   margin-bottom: 2.4rem;
 }
 
+/* = Specialization section = */
+
+.specialization-section {
+  padding: 9.6rem 0;
+}
+
+.specialization-grid {
+  padding: 0 9.6rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 9.6rem;
+}
+
+.specialization-icon-box {
+  font-size: 9.6rem;
+  color: #364fc7;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.specialization-info {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* = Partners section = */
+
 .partners-section {
   padding: 9.6rem 0;
 }
@@ -148,36 +194,19 @@ body {
   height: 5.2rem;
 }
 
-.copy {
-  text-align: center;
-  font-size: 1.2rem;
-}
-
 /* = Footer = */
 
 .footer {
   padding: 9.6rem 2.4rem;
 }
 
-.about-elements {
-  list-style: none;
-  display: flex;
-  gap: 7.2rem;
-  justify-content: center;
-}
-
-.about-elements li {
-  text-align: center;
-}
-
-.about-icon {
-  width: 2.6rem;
-  height: 2.6rem;
-  fill: #fa5252;
-}
-
 .company-name {
   font-weight: 500;
+}
+
+.copy {
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 /* = Link Styling = */
