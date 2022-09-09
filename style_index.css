@@ -11,6 +11,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -242,11 +243,11 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  row-gap: 1.2rem;
+  row-gap: 2.4rem;
 }
 
 .logos img {
-  height: 5.2rem;
+  height: 4.6rem;
 }
 
 /* = Footer = */
