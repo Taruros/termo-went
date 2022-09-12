@@ -460,3 +460,8 @@ ul.dropdown-content li:last-child {
 .highlight {
   border-bottom: 2px solid #e03131;
 }
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
