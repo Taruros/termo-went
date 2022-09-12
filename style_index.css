@@ -198,7 +198,11 @@ body {
 
 /* = Testimonial section = */
 
-.testimonial-section .testimonial-container {
+.testimonial-section {
+  padding: 9.6rem 0;
+}
+
+.testimonial-container {
   padding: 4.8rem 0 7.2rem;
   background-color: #e03131;
   border-radius: 4.8rem;
@@ -248,7 +252,7 @@ body {
 /* = Partners section = */
 
 .partners-section {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 12rem;
 }
 
 .logos {
@@ -262,6 +266,58 @@ body {
 
 .logos img {
   height: 3.6rem;
+}
+
+/* = Contact Us section = */
+
+.contact-us-section {
+  padding: 3.6rem 0;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 15%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url(img/contact-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-heading {
+  color: #fff;
+  margin-bottom: 7.2rem;
+}
+
+.contact-info {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4;
+  text-align: center;
+
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* justify-content: space-between; */
+  gap: 18rem;
+}
+
+.contact-icon {
+  font-size: 3.6rem;
+}
+
+.phone-number,
+.phone-number:link,
+.phone-number:visited,
+.mail-address,
+.mail-address:link,
+.mail-address:visited {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.phone-number:hover,
+.mail-address:hover {
+  cursor: pointer;
 }
 
 /* = Footer = */
@@ -377,6 +433,8 @@ body {
   flex-flow: column;
   align-items: flex-end;
   gap: 0.4rem;
+
+  z-index: 1;
 }
 
 .media-link,
@@ -409,6 +467,10 @@ body {
   background: url(img/facebook.png);
   background-size: contain;
   display: inline-block;
+}
+
+.pageup {
+  background-color: #fff;
 }
 
 .pageup-box {
