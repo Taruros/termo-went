@@ -293,11 +293,12 @@ body {
   font-weight: 500;
   line-height: 2.4;
   text-align: center;
+  margin-bottom: 3.6rem;
 
-  display: flex;
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   /* justify-content: space-between; */
-  gap: 18rem;
+  gap: 12rem;
 }
 
 .contact-icon {
@@ -323,7 +324,9 @@ body {
 /* = Footer = */
 
 .footer {
-  padding: 9.6rem 2.4rem;
+  padding: 1.2rem 2.4rem;
+  background-color: #e03131;
+  color: #fff;
 }
 
 .company-name {
@@ -401,6 +404,14 @@ body {
   transition: 0.3s;
 }
 
+.btn-contact,
+.btn-contact:link,
+.btn-contact:visited {
+  color: #fff;
+  background-color: hsla(0, 0%, 0%, 0);
+  border-color: #fff;
+}
+
 .testimonial-section .btn,
 .testimonial-section .btn:link,
 .testimonial-section .btn:visited {
@@ -425,16 +436,26 @@ body {
 /* = Aside = */
 
 .aside {
+  /* position: fixed; */
+  /* right: 0%; */
+  /* bottom: 2.5%; */
+
+  /* display: flex; */
+  /* flex-flow: column; */
+  /* align-items: flex-end; */
+  /* gap: 0.4rem; */
+
+  z-index: 1;
+}
+
+.media-links-box {
   position: fixed;
   right: 0%;
-  bottom: 2.5%;
+  top: 33%;
 
   display: flex;
   flex-flow: column;
-  align-items: flex-end;
-  gap: 0.4rem;
-
-  z-index: 1;
+  gap: 2.4rem;
 }
 
 .media-link,
@@ -444,11 +465,11 @@ body {
   width: fit-content;
   border-radius: 100px;
   padding: 0.5rem;
-  font-size: 175%;
+  font-size: 200%;
   font-weight: 500;
   text-decoration: none;
   text-align: center;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 
   display: flex;
   align-items: center;
@@ -462,25 +483,29 @@ body {
 }
 
 .fb-logo {
-  width: 2.4rem;
-  height: 2.4rem;
+  min-width: 3.6rem;
+  min-height: 3.6rem;
   background: url(img/facebook.png);
   background-size: contain;
   display: inline-block;
 }
 
 .pageup {
+  position: fixed;
+  right: 0%;
+  bottom: 2%;
+
   background-color: #fff;
 }
 
 .pageup-box {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 3.6rem;
+  height: 3.6rem;
 }
 
 .up-arrow {
   color: #343a40;
-  font-size: 110%;
+  font-size: 150%;
 }
 
 .dropdown-content-aside {
