@@ -8,6 +8,15 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e03131;
+  /* border-radius: 100px; */
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -15,7 +24,6 @@ html {
 }
 
 body {
-  /* width: 90%; */
   font-family: "Inter", sans-serif;
   color: #343a40;
 }
@@ -27,9 +35,9 @@ body {
   line-height: 1.05;
   padding-bottom: 1rem;
   margin-bottom: 2.2rem;
-  background: no-repeat url("img/underline.png");
+  /* background: no-repeat url("img/underline.png");
   background-size: 90%;
-  background-position: 0 100%;
+  background-position: 0 100%; */
 }
 
 .heading-tertiary {
@@ -190,7 +198,7 @@ body {
 
 /* = Testimonial section = */
 
-.testimonial-section {
+.testimonial-section .testimonial-container {
   padding: 4.8rem 0 7.2rem;
   background-color: #e03131;
   border-radius: 4.8rem;
@@ -248,10 +256,12 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   row-gap: 2.4rem;
+  column-gap: 1.2rem;
+  column-count: 3;
 }
 
 .logos img {
-  height: 4.6rem;
+  height: 3.6rem;
 }
 
 /* = Footer = */
@@ -356,9 +366,69 @@ body {
   justify-content: space-evenly;
 }
 
+/* = Aside = */
+
+.aside {
+  position: fixed;
+  right: 0%;
+  bottom: 2.5%;
+
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  gap: 0.4rem;
+}
+
+.media-link {
+  /* height: 3.6rem; */
+  width: fit-content;
+  border-radius: 100px;
+  padding: 0.5rem;
+  font-size: 175%;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.facebook {
+  background-color: #4267b2;
+  color: #fff;
+}
+
+.fb-logo {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url(img/facebook.png);
+  background-size: contain;
+  display: inline-block;
+}
+
+.pageup {
+  padding: 0;
+}
+
+.up-arrow {
+  font-size: 200%;
+  padding: 0;
+}
+
+.dropdown-content-aside {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content-aside {
+  display: inline-block;
+  margin: auto auto;
+}
+
 /* = Dropdown Menu = */
 
-.dropdown {
+.dropdown-nav {
   position: relative;
   display: inline-block;
 }
@@ -381,7 +451,7 @@ ul.dropdown-content li:last-child {
   margin-bottom: 0;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-nav:hover .dropdown-content {
   display: block;
 }
 

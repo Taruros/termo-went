@@ -29,7 +29,7 @@
             <a href="index.html" class="main-nav-link">Start</a>
           </li>
 
-          <li class="dropdown">
+          <li class="dropdown-nav">
             <a href="o-firmie.html" class="main-nav-link">O firmie</a>
             <ul class="nav-dropdown dropdown-content">
               <li>
@@ -49,7 +49,7 @@
             </ul>
           </li>
 
-          <li class="dropdown">
+          <li class="dropdown-nav">
             <a href="oferta.html" class="main-nav-link">Oferta</a>
             <ul class="nav-dropdown dropdown-content">
               <li>
@@ -118,7 +118,13 @@
         <ul class="about-list">
           <li>
             <ion-icon class="icon" name="time"></ion-icon>
-            <h3 class="heading-tertiary about-heading">16 Lat doświadczenia</h3>
+            <h3 class="heading-tertiary about-heading">
+              <script>
+                document.write(new Date().getFullYear() - 2006);
+              </script>
+
+              Lat doświadczenia
+            </h3>
           </li>
 
           <li>
@@ -192,55 +198,57 @@
       </div>
     </section>
 
-    <section class="testimonial-section container">
-      <div class="container">
-        <h2 class="heading-secondary testimonial-heading">
-          Co myślą o nas klienci?
-        </h2>
-      </div>
+    <section class="testimonial-section">
+      <div class="testimonial-container container">
+        <div class="container">
+          <h2 class="heading-secondary testimonial-heading">
+            Co myślą o nas klienci?
+          </h2>
+        </div>
 
-      <div class="container testimonial-box">
-        <figure class="testimonial-figure">
-          <div class="testimonial-author-box">
+        <div class="container testimonial-box">
+          <figure class="testimonial-figure">
+            <div class="testimonial-author-box">
+              <p class="testimonial">
+                Bardzo uczciwa firma instalacyjna o najwyższych standardach.
+              </p>
+              <span class="testimonial-rating">⭐⭐⭐⭐⭐</span>
+              <span class="testimonial-author">Wojciech Bartosiewicz</span>
+            </div>
+          </figure>
+
+          <figure class="testimonial-figure">
             <p class="testimonial">
-              Bardzo uczciwa firma instalacyjna o najwyższych standardach.
+              Pozytywne: Czas reakcji, Jakość, Profesjonalizm, Punktualność,
+              Wartość
             </p>
-            <span class="testimonial-rating">⭐⭐⭐⭐⭐</span>
-            <span class="testimonial-author">Wojciech Bartosiewicz</span>
-          </div>
-        </figure>
+            <div class="testimonial-author-box">
+              <span class="testimonial-rating">⭐⭐⭐⭐⭐</span>
+              <span class="testimonial-author">Karol Kosiarski</span>
+            </div>
+          </figure>
 
-        <figure class="testimonial-figure">
-          <p class="testimonial">
-            Pozytywne: Czas reakcji, Jakość, Profesjonalizm, Punktualność,
-            Wartość
-          </p>
-          <div class="testimonial-author-box">
-            <span class="testimonial-rating">⭐⭐⭐⭐⭐</span>
-            <span class="testimonial-author">Karol Kosiarski</span>
-          </div>
-        </figure>
+          <figure class="testimonial-figure">
+            <p class="testimonial">Profesjonalnie!!</p>
+            <div class="testimonial-author-box">
+              <span class="testimonial-rating">⭐⭐⭐⭐⭐</span>
+              <span class="testimonial-author">Michał Kumięga</span>
+            </div>
+          </figure>
+        </div>
 
-        <figure class="testimonial-figure">
-          <p class="testimonial">Profesjonalnie!!</p>
-          <div class="testimonial-author-box">
-            <span class="testimonial-rating">⭐⭐⭐⭐⭐</span>
-            <span class="testimonial-author">Michał Kumięga</span>
-          </div>
-        </figure>
-      </div>
-
-      <div class="container center-btn-box">
-        <a
-          href="https://www.google.com/maps/place/Termo-Went+Sp.+z+o.o./@50.0086131,20.9451369,17z/data=!4m7!3m6!1s0x473d8567a7876735:0xabc082b6b81a629d!8m2!3d50.0086131!4d20.9473256!9m1!1b1"
-          class="btn"
-          >Zobacz opinie w Google</a
-        >
-        <a
-          href="https://www.facebook.com/profile.php?id=100063790980868&sk=reviews"
-          class="btn"
-          >Zobacz opinie w Facebook</a
-        >
+        <div class="container center-btn-box">
+          <a
+            href="https://www.google.com/maps/place/Termo-Went+Sp.+z+o.o./@50.0086131,20.9451369,17z/data=!4m7!3m6!1s0x473d8567a7876735:0xabc082b6b81a629d!8m2!3d50.0086131!4d20.9473256!9m1!1b1"
+            class="btn"
+            >Zobacz opinie w Google</a
+          >
+          <a
+            href="https://www.facebook.com/profile.php?id=100063790980868&sk=reviews"
+            class="btn"
+            >Zobacz opinie w Facebook</a
+          >
+        </div>
       </div>
     </section>
 
@@ -272,13 +280,26 @@
       </div>
     </section>
 
-    <aside class="aside"></aside>
+    <aside class="aside">
+      <a
+        href="https://www.facebook.com/people/Termo-Went/100063790980868/"
+        class="media-link facebook dropdown"
+        target="_blank"
+      >
+        <div class="fb-logo"></div>
+        <span class="dropdown-content-aside"> Odwiedź nas na Facebook </span>
+      </a>
+
+      <a href="#" class="media-link pageup">
+        <ion-icon class="up-arrow" name="chevron-up"></ion-icon>
+      </a>
+    </aside>
 
     <footer class="footer">
       <p class="copy">
         <span
           ><script>
-            document.write(/\d{4}/.exec(Date())[0]);
+            document.write(new Date().getFullYear());
           </script></span
         >
         &copy; Termo-Went Sp. z o.o., wykonanie strony Szymon Kwiatkowski
@@ -295,3 +316,5 @@
     ></script>
   </body>
 </html>
+
+<!-- https://codepen.io/Taruros/pen/ExLKWBa -->
