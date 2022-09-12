@@ -260,12 +260,12 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   row-gap: 2.4rem;
-  column-gap: 1.2rem;
+  column-gap: 2rem;
   column-count: 3;
 }
 
 .logos img {
-  height: 3.6rem;
+  height: 3.2rem;
 }
 
 /* = Contact Us section = */
@@ -313,7 +313,7 @@ body {
 .mail-address:visited {
   text-decoration: none;
   color: #fff;
-  display: block;
+  display: inline-block;
 }
 
 .phone-number:hover,
