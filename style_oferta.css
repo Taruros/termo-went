@@ -64,9 +64,9 @@ body {
   background-image: linear-gradient(
       0deg,
       rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 30%
+      transparent 30%
     ),
-    linear-gradient(to right, rgba(224, 49, 49, 1) 0%, rgba(0, 0, 0, 0) 45%),
+    linear-gradient(to right, rgba(224, 49, 49, 1) 0%, transparent 45%),
     url("img/oferta-heading-bg.jpg");
   background-size: cover;
   background-position: center;
