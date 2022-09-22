@@ -39,16 +39,16 @@ body {
   background-position: 0 100%; */
 }
 
-.heading-tertiary {
-  font-size: 2.4rem;
-  line-height: 1.2;
-  margin-bottom: 3.2rem;
-}
-
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
 
 .heading-tertiary.about-heading {
@@ -215,10 +215,11 @@ body {
 }
 
 .testimonial-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
   gap: 4.8rem;
   margin-bottom: 9.6rem;
+  flex-flow: wrap;
 }
 
 .testimonial-figure {
@@ -230,6 +231,8 @@ body {
   align-items: center;
   justify-content: space-between;
   border-radius: 1.2rem;
+  flex-basis: min-content;
+  flex-grow: 1;
 }
 
 .testimonial {
@@ -299,11 +302,15 @@ body {
   font-weight: 500;
   line-height: 2.4;
   text-align: center;
+  justify-content: center;
   margin-bottom: 8rem;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 12rem;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  flex-flow: wrap;
+  flex-basis: min-content;
+  flex-grow: 1;
+  gap: 18rem;
 }
 
 .contact-icon {
@@ -318,7 +325,7 @@ body {
 .mail-address:visited {
   text-decoration: none;
   color: #fff;
-  display: inline-block;
+  display: block;
 }
 
 .phone-number:hover,
@@ -552,13 +559,13 @@ ul.dropdown-content li:last-child {
 
 /* smol */
 
-.highlight {
+/* .highlight {
   border-bottom: 2px solid #e03131;
 }
 
 .reader-text {
   display: none;
-}
+} */
 
 /* Random animations */
 

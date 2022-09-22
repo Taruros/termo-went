@@ -1,0 +1,97 @@
+/* Main color: #fa5252 #e03131*/
+/* Secondary colod: #4263eb #364fc7 */
+/* Gray color: #343a40 #868e96 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e03131;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+}
+
+/* ===== Headings ===== */
+
+.primary-heading {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  padding-bottom: 1rem;
+  margin-bottom: 2.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+/* === Site elements === */
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+
+/* ===== Hero section ===== */
+
+.section-hero {
+  /* margin-top: 0; */
+  height: calc(100vh - 8rem);
+  position: relative;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/realizacje-bg.jpg);
+}
+
+.hero {
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ===== Gallery section ===== */
+
+.gallery-section {
+  padding: 9.6rem 0;
+}
+
+.gallery {
+  height: 32rem;
+  display: flex;
+  gap: 4.8rem;
+  overflow-x: scroll;
+  padding-bottom: 1rem;
+}
+
+.gallery img {
+  height: 100%;
+}
