@@ -86,7 +86,7 @@ body {
 }
 
 .gallery {
-  height: 32rem;
+  height: 31rem;
   display: flex;
   gap: 4.8rem;
   overflow-x: scroll;
