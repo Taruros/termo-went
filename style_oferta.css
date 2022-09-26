@@ -103,6 +103,11 @@ body {
   margin-bottom: 3.2rem;
 }
 
+.about-text {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
 /* ===== Link Styling ===== */
 
 .btn,
@@ -148,6 +153,7 @@ section ul {
   list-style: none;
   font-size: 3rem;
   font-weight: 500;
+  margin-bottom: 6rem;
 }
 
 section ul li {
