@@ -34,7 +34,7 @@ body {
   color: #fff;
   line-height: 1.05;
   padding-bottom: 1rem;
-  /* margin-bottom: 2.2rem; */
+  margin-bottom: 3.2rem;
 }
 
 .heading-tertiary {
@@ -60,26 +60,36 @@ body {
 /* ===== Hero section ===== */
 
 .section-hero {
-  padding: 4.8rem 0 7.2rem 0;
-  background-image: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 0%,
-      transparent 30%
-    ),
+  height: 100vh;
+  padding-bottom: 8rem;
+
+  background-image: linear-gradient(to top, #fff 0%, transparent 8rem),
     linear-gradient(to right, rgba(224, 49, 49, 1) 0%, transparent 45%),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("img/oferta-heading-bg.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero {
-  max-width: 130rem;
-  padding: 0 4.8rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4.2rem;
-  margin: 0 auto;
-  position: relative;
+  width: 120rem;
+  color: #fff;
+}
+
+.hero-text-box {
+  width: 70%;
+}
+
+.hero-text {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  /* margin-bottom: 1rem; */
+  transition-delay: 150ms;
 }
 
 /* ===== About section ===== */
@@ -90,12 +100,6 @@ body {
 
 .about-section .heading-secondary {
   margin-bottom: 3.2rem;
-}
-
-.about-text {
-  font-size: 2.4rem;
-  line-height: 1.4;
-  margin-bottom: 1rem;
 }
 
 /* ===== Link Styling ===== */
