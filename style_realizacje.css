@@ -56,13 +56,12 @@ body {
   margin: 0 auto;
 }
 
-/* ===== Header ===== */
-
 /* ===== Hero section ===== */
 
 .section-hero {
   height: 100vh;
   padding-bottom: 8rem;
+  margin-bottom: 2.4rem;
 
   background-image: linear-gradient(to top, #fff 0%, transparent 8rem),
     linear-gradient(to right, rgba(224, 49, 49, 1) 0%, transparent 45%),
@@ -85,7 +84,7 @@ body {
 /* ===== Gallery section ===== */
 
 .gallery-section {
-  padding: 9.6rem 0;
+  padding: 6rem 0;
 }
 
 .gallery {
