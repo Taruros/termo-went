@@ -84,11 +84,12 @@ body {
 /* ===== Gallery section ===== */
 
 .gallery-section {
-  padding: 6rem 0;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
 }
 
 .gallery {
-  height: 31rem;
+  height: 30rem;
   display: flex;
   gap: 4.8rem;
   overflow-x: scroll;

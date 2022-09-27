@@ -55,6 +55,10 @@
     display: none;
   }
 
+  .gallery {
+    height: 24rem;
+  }
+
   /* MOBILE NAVIGATION */
   /* .btn-mobile-nav {
     display: block;
