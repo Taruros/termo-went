@@ -131,6 +131,10 @@
     display: none;
   }
 
+  .section-hero {
+    margin-top: 4rem;
+  }
+
   .hero {
     display: block;
   }
