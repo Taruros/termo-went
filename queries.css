@@ -124,7 +124,7 @@
 @media screen and (max-width: 44em) {
   .navigation-bar {
     height: 6rem;
-    padding: 0 1.6rem;
+    padding: 3.6rem 2rem;
   }
 
   .responsive-nav-link {
@@ -137,6 +137,7 @@
 
   .hero {
     display: block;
+    padding: 0 3.2rem;
   }
 
   .hero-img-box {
@@ -170,6 +171,10 @@
   .contact-info {
     flex-flow: column;
     gap: 6rem;
+  }
+
+  .footer-links {
+    display: flex;
   }
 }
 

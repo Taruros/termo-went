@@ -87,18 +87,40 @@ ul.dropdown-content li:last-child {
 /* ----- FOOTER ----- */
 
 .footer {
-  padding: 1.2rem 2.4rem;
-  background-color: #e03131;
+  font-size: 1.2rem;
+  line-height: 2;
   color: #fff;
+  background-color: #e03131;
+  padding: 1.2rem 2.4rem;
 }
 
 .company-name {
   font-weight: 500;
 }
 
+.footer-links {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.footer-link,
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #ffe3e3;
+}
+
 .copy {
+  font-weight: 600;
   text-align: center;
-  font-size: 1.2rem;
 }
 
 /* ----- ASIDE ----- */
