@@ -57,11 +57,25 @@ body {
   margin: 0 auto;
 }
 
+.services-text,
+.clients-text,
+.distributors-text {
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+.services-text:not(:last-child),
+.clients-text:not(:last-child),
+.distributors-text:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
 /* ===== Hero section ===== */
 
 .section-hero {
-  height: 100vh;
-  padding-bottom: 8rem;
+  height: calc(100vh + 8rem);
+  padding: 8rem 4.8rem;
+  margin-top: 0;
 
   background-image: linear-gradient(to top, #fff 0%, transparent 8rem),
     linear-gradient(to right, rgba(224, 49, 49, 1) 0%, transparent 45%),
@@ -73,16 +87,12 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.hero {
-  width: 120rem;
+.hero-100 {
+  max-width: 100rem;
   color: #fff;
-}
-
-.hero-text-box {
-  width: 70%;
 }
 
 .hero-text {
@@ -93,19 +103,69 @@ body {
   transition-delay: 150ms;
 }
 
-/* ===== About section ===== */
+/* ===== Services section ===== */
 
-.about-section {
-  padding: 9.6rem 0;
+.services-section {
+  padding: 9.6rem 0 6rem;
 }
 
-.about-section .heading-secondary {
+.services-section .heading-secondary {
   margin-bottom: 3.2rem;
 }
 
-.about-text {
-  font-size: 3rem;
+.services-list li::before {
+  background-image: url(img/checkmark.svg);
+}
+
+/* ===== Clients section ===== */
+
+.clients-section {
+  padding: 6rem 0;
+}
+
+.clients-list li::before {
+  background-image: url(img/work.png);
+}
+
+/* ===== Distributors section ===== */
+
+.distributors-section {
+  padding: 6rem 0 7.2rem;
+}
+
+.distributors-list li::before {
+  background-image: url(img/product.png);
+}
+
+/* ===== Products section ===== */
+
+/* ========== LIST STYLING ========== */
+
+.styled-list {
+  list-style: none;
+  font-size: 2.4rem;
   font-weight: 500;
+  margin-bottom: 6rem;
+
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.styled-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.styled-list li::before {
+  flex-shrink: 0;
+  content: "";
+  background-size: cover;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
 }
 
 /* ===== Link Styling ===== */
@@ -147,36 +207,6 @@ body {
   transition: 0.3s;
 }
 
-/* ===== LIST STYLING ===== */
-
-section ul {
-  list-style: none;
-  font-size: 3rem;
-  font-weight: 500;
-  margin-bottom: 6rem;
-}
-
-section ul li {
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-section ul li:last-child {
-  margin-bottom: 0;
-}
-
-section ul li::before {
-  content: "";
-  background-image: url(img/checkmark.svg);
-  background-size: cover;
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  position: relative;
-  top: 0.2rem;
-  margin-right: 1rem;
-}
-
 /* smol */
 
 .highlight {
@@ -187,6 +217,6 @@ section ul li::before {
   display: none;
 }
 
-.strange-margin {
-  margin-left: -0.3em;
+.bottom-32 {
+  margin-bottom: 3.2rem !important;
 }

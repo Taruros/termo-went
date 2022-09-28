@@ -128,15 +128,15 @@
 @media screen and (max-width: 44em) {
   .navigation-bar {
     height: 6rem;
-    padding: 4rem 2rem;
+    padding: 3.2rem 1.6rem;
   }
 
   .responsive-nav-link {
     display: none;
   }
 
-  .section-hero {
-    margin-top: 4rem;
+  .section-hero-main {
+    margin-top: 6rem;
   }
 
   .hero {
@@ -177,8 +177,12 @@
     gap: 6rem;
   }
 
-  .footer-links {
+  .appearing-links {
     display: flex;
+  }
+
+  .heading-oferta {
+    font-size: 4rem;
   }
 }
 
@@ -189,6 +193,10 @@
 @media screen and (max-width: 415px) {
   .hero {
     padding: 0 2.4rem;
+  }
+
+  .heading-oferta {
+    font-size: 3.6rem;
   }
 }
 

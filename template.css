@@ -1,3 +1,7 @@
+/* Main color: #fa5252 #e03131*/
+/* Secondary colod: #4263eb #364fc7 */
+/* Gray color: #343a40 #868e96 */
+
 .section-hero {
   margin-top: 8rem;
 }
@@ -98,24 +102,28 @@ ul.dropdown-content li:last-child {
   font-weight: 500;
 }
 
-.footer-links {
+.appearing-links {
   display: none;
+
+  width: 100%;
+  padding-bottom: 1rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 1.2rem;
 }
 
-.footer-link,
-.footer-link:link,
-.footer-link:visited {
+.appearing-link,
+.appearing-link:link,
+.appearing-link:visited {
   text-decoration: none;
-  color: #fff;
-  font-weight: 500;
+  color: #343a40;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
-.footer-link:hover,
-.footer-link:active {
-  color: #ffe3e3;
+.appearing-link:hover,
+.appearing-link:active {
+  color: #868e96;
 }
 
 .copy {
