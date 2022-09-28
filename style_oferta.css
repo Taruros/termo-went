@@ -209,14 +209,6 @@ body {
 
 /* smol */
 
-.highlight {
-  border-bottom: 2px solid #e03131;
-}
-
-.reader-text {
-  display: none;
-}
-
 .bottom-32 {
   margin-bottom: 3.2rem !important;
 }

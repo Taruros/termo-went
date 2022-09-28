@@ -62,11 +62,12 @@ body {
   height: calc(100vh + 8rem);
   padding: 8rem 4.8rem;
   margin-top: 0;
+  margin-bottom: 2.4rem;
 
   background-image: linear-gradient(to top, #fff 0%, transparent 8rem),
     linear-gradient(to right, rgba(224, 49, 49, 1) 0%, transparent 45%),
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/realizacje-bg.jpg);
+    url(img/o-firmie-bg.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -79,23 +80,4 @@ body {
 .hero {
   width: 120rem;
   color: #fff;
-}
-
-/* ===== Gallery section ===== */
-
-.gallery-section {
-  padding-bottom: 6rem;
-  padding-top: 6rem;
-}
-
-.gallery {
-  height: 30rem;
-  display: flex;
-  gap: 4.8rem;
-  overflow-x: scroll;
-  padding-bottom: 1rem;
-}
-
-.gallery img {
-  height: 100%;
 }
