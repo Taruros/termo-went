@@ -200,6 +200,24 @@
   .heading-oferta {
     font-size: 4rem;
   }
+
+  .sport-team-content-box {
+    flex-flow: column;
+  }
+
+  .sport-team-img-box {
+    height: 60vh;
+  }
+
+  .sport-team-content-box .sport-team-text-box,
+  .sport-team-content-box .sport-team-img-box {
+    flex-basis: auto;
+  }
+
+  .device-grid {
+    display: flex;
+    flex-flow: column;
+  }
 }
 
 /**************************/

@@ -37,6 +37,8 @@ body {
   /* background: no-repeat url("img/underline.png");
   background-size: 90%;
   background-position: 0 100%; */
+
+  letter-spacing: -0.2rem;
 }
 
 .heading-secondary {

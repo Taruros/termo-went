@@ -35,6 +35,8 @@ body {
   line-height: 1.05;
   padding-bottom: 1rem;
   margin-bottom: 3.2rem;
+
+  letter-spacing: -0.2rem;
 }
 
 .heading-tertiary {
@@ -59,14 +61,16 @@ body {
 
 .services-text,
 .clients-text,
-.distributors-text {
+.distributors-text,
+.device-text {
   font-size: 2.6rem;
   font-weight: 500;
 }
 
 .services-text:not(:last-child),
 .clients-text:not(:last-child),
-.distributors-text:not(:last-child) {
+.distributors-text:not(:last-child),
+.device-text:not(:last-child) {
   margin-bottom: 2rem;
 }
 
@@ -123,6 +127,10 @@ body {
   padding: 6rem 0;
 }
 
+.clients-list {
+  margin-bottom: 0 !important;
+}
+
 .clients-list li::before {
   background-image: url(img/work.png);
 }
@@ -130,14 +138,64 @@ body {
 /* ===== Distributors section ===== */
 
 .distributors-section {
-  padding: 6rem 0 7.2rem;
+  padding: 6rem 0 6rem;
 }
 
 .distributors-list li::before {
   background-image: url(img/product.png);
 }
 
-/* ===== Products section ===== */
+/* ===== Devices section ===== */
+
+.devices-section {
+  padding: 9.6rem 0;
+}
+
+.device-grid-heading {
+  margin-bottom: 0;
+}
+
+.device-element-heading {
+  font-weight: 500;
+}
+
+.device-heading,
+.device-grid-heading,
+.device-element-heading {
+  text-align: center;
+}
+
+.device-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+
+.device-grid:not(:last-child) {
+  padding: 4.8rem 0;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.device-grid-heading {
+  grid-column: 1 / -1;
+}
+
+.device-info {
+  font-size: 1.8rem;
+  text-align: justify;
+}
+
+.device-info:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.device-text {
+  grid-column: 1 / -1;
+}
+
+.device-recuperation {
+  padding-top: 4.8rem;
+}
 
 /* ========== LIST STYLING ========== */
 
@@ -211,4 +269,8 @@ body {
 
 .bottom-32 {
   margin-bottom: 3.2rem !important;
+}
+
+.no-pad-top {
+  padding-top: 0 !important;
 }
