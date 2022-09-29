@@ -43,6 +43,10 @@
     font-size: 50%;
   }
 
+  .hero-img-box {
+    background-image: url(img/hero-image-small.png);
+  }
+
   .testimonial-container {
     border-radius: 0;
   }
@@ -136,7 +140,15 @@
   }
 
   .section-hero-main {
-    margin-top: 6rem;
+    color: #fff;
+
+    margin-top: 0;
+    padding-top: 12.8rem;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(img/hero-mobile.jpeg);
+    background-position: center;
+    background-size: cover;
   }
 
   .hero {
@@ -161,6 +173,10 @@
     flex-flow: column;
     gap: 6rem;
     text-align: justify;
+  }
+
+  .testimonial-heading {
+    margin-bottom: 6rem;
   }
 
   .testimonial-box {

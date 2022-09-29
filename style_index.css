@@ -118,6 +118,7 @@ body {
 
 .section-hero {
   padding: 4.8rem 0 7.2rem 0;
+  margin-top: 8rem;
 }
 
 .hero {
@@ -140,6 +141,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-image: url(img/hero-image-big.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-image {
@@ -261,7 +267,7 @@ body {
 /* = Partners section = */
 
 .partners-section {
-  padding: 7.2rem 0 12rem;
+  padding: 4rem 0 12rem;
 }
 
 .logos {
