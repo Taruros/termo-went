@@ -33,7 +33,7 @@ body {
   font-size: 5.2rem;
   line-height: 1.05;
   padding-bottom: 1rem;
-  /* margin-bottom: 2.2rem; */
+  margin-bottom: 3.2rem;
 
   letter-spacing: -0.2rem;
 }
@@ -89,12 +89,20 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.hero {
-  width: 120rem;
+.hero-100 {
+  max-width: 100rem;
   color: #fff;
+}
+
+.hero-text {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  /* margin-bottom: 1rem; */
+  transition-delay: 150ms;
 }
 
 /* ===== History section ===== */
@@ -129,10 +137,6 @@ body {
   flex-basis: 50%;
   flex-grow: 1;
   flex-shrink: 1;
-}
-
-.sport-team-text {
-  font-weight: 500;
 }
 
 /* ===== Job section ===== */

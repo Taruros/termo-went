@@ -33,7 +33,7 @@ body {
   font-size: 5.2rem;
   line-height: 1.05;
   padding-bottom: 1rem;
-  /* margin-bottom: 2.2rem; */
+  margin-bottom: 3.2rem;
 
   letter-spacing: -0.2rem;
 }
@@ -81,6 +81,14 @@ body {
 .hero {
   width: 120rem;
   color: #fff;
+}
+
+.hero-text {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  /* margin-bottom: 1rem; */
+  transition-delay: 150ms;
 }
 
 /* ===== Gallery section ===== */
