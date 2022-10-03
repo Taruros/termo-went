@@ -144,7 +144,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-image: url(img/hero-image-big.png);
+  background-image: url(img/hero-image-big.webp);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -294,7 +294,7 @@ body {
       rgba(0, 0, 0, 1) 15%,
       rgba(0, 0, 0, 0.3) 100%
     ),
-    url(img/contact-bg.jpg);
+    url(img/contact-bg.webp);
   background-position: center;
   background-size: cover;
 }
