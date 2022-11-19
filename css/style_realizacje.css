@@ -8,11 +8,11 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 0.8rem;
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: #e03131;
 }
 
@@ -68,7 +68,7 @@ body {
   background-image: linear-gradient(to top, #fff 0%, transparent 8rem),
     linear-gradient(to right, rgba(224, 49, 49, 1) 0%, transparent 45%),
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/realizacje-bg.webp);
+    url(../img/realizacje-bg.webp);
   background-size: cover;
   background-position: center;
   position: relative;

@@ -172,7 +172,7 @@ ul.dropdown-content li:last-child {
 .fb-logo {
   min-width: 3.6rem;
   min-height: 3.6rem;
-  background: url(img/facebook.png);
+  background: url(../img/facebook.png);
   background-size: contain;
   display: inline-block;
 }

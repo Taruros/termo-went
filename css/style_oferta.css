@@ -8,11 +8,11 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 0.8rem;
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: #e03131;
 }
 
@@ -84,7 +84,7 @@ body {
   background-image: linear-gradient(to top, #fff 0%, transparent 8rem),
     linear-gradient(to right, rgba(224, 49, 49, 1) 0%, transparent 45%),
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("img/oferta-bg.webp");
+    url(../img/oferta-bg.webp);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -119,7 +119,7 @@ body {
 }
 
 .services-list li::before {
-  background-image: url(img/checkmark.svg);
+  background-image: url(../img/checkmark.svg);
 }
 
 /* ===== Clients section ===== */
@@ -132,7 +132,7 @@ body {
 } */
 
 .clients-list li::before {
-  background-image: url(img/work.png);
+  background-image: url(../img/work.png);
 }
 
 /* ===== Distributors section ===== */
@@ -142,7 +142,7 @@ body {
 }
 
 .distributors-list li::before {
-  background-image: url(img/product.png);
+  background-image: url(../img/product.png);
 }
 
 /* ===== Devices section ===== */
